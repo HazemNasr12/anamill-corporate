@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anamill | Corporate Gifting in Saudi Arabia</title>
+<meta name="description" content="Premium handcrafted corporate gifts and customized gifting solutions for companies, VIP clients, employees and events in Saudi Arabia.">
+<meta property="og:title" content="Anamill | Corporate Gifting in Saudi Arabia">
+<meta property="og:description" content="Premium handcrafted corporate gifts and customized gifting solutions for companies, VIP clients, employees and events in Saudi Arabia.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/ce27459b-image.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#2a102d;
+    --plum-deep:#190a1c;
+    --plum-soft:#3a1f3e;
+    --ink:#241a26;
+    --paper:#faf6ef;
+    --paper-deep:#f1e9d8;
+    --white:#ffffff;
+    --terracotta:#c1622d;
+    --terracotta-deep:#a34f22;
+    --gold:#b08d57;
+    --gold-light:#e3d3ae;
+    --teal:#1d6f74;
+    --gray:#6b5f6d;
+    --hair:#e7e0e9;
+    --shadow: 0 20px 60px -20px rgba(42,16,45,0.25);
+    --maxw: 1240px;
+    --radius: 2px;
+    --ff-head:'Fraunces', Georgia, serif;
+    --ff-body:'Inter', -apple-system, sans-serif;
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+  html[dir="rtl"]{
+    --ff-head:'Tajawal', 'Fraunces', sans-serif;
+    --ff-body:'Tajawal', 'Inter', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--ff-body); font-size:16px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  h1,h2,h3{font-family:var(--ff-head); margin:0; font-weight:600; letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{list-style:none; margin:0; padding:0;}
+  button{font-family:inherit; cursor:pointer;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 20px;} }
+
+  .kicker{
+    font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--terracotta); margin-bottom:16px; display:block;
+  }
+  html[dir="rtl"] .kicker{letter-spacing:0;}
+  .section-title{font-size:clamp(28px,4vw,42px); line-height:1.15; color:var(--plum); max-width:720px;}
+  .section-body{font-size:16.5px; color:var(--gray); max-width:560px; margin-top:18px; line-height:1.7;}
+  section{position:relative;}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; justify-content:center;
+    padding:15px 28px; font-size:14px; font-weight:600; letter-spacing:.02em;
+    border-radius:1px; border:1px solid transparent; white-space:nowrap;
+    transition:all .35s var(--ease); cursor:pointer;
+  }
+  .btn-primary{background:var(--terracotta); color:#fff;}
+  .btn-primary:hover{background:var(--terracotta-deep); transform:translateY(-2px); box-shadow:0 14px 28px -12px rgba(193,98,45,.55);}
+  .btn-ghost-light{background:transparent; color:#fff; border-color:rgba(255,255,255,.55);}
+  .btn-ghost-light:hover{background:rgba(255,255,255,.12); border-color:#fff;}
+  .btn-ghost-dark{background:transparent; color:var(--plum); border-color:var(--plum);}
+  .btn-ghost-dark:hover{background:var(--plum); color:#fff;}
+  .btn-sm{padding:10px 20px; font-size:13px;}
+
+  /* ---------- header ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:22px 0; transition:all .4s var(--ease);
+  }
+  header.scrolled{background:rgba(250,246,239,.98); padding:14px 0; box-shadow:0 1px 0 rgba(42,16,45,.08);}
+  header .wrap{display:flex; align-items:center; justify-content:space-between; gap:24px;}
+  .logo-mark{height:80px; transition:filter .3s;}
+  header.scrolled .logo-mark{height:26px;}
+  .logo-mark.light{filter:brightness(0) invert(1);}
+  header.scrolled .logo-mark.light{filter:none;}
+  nav.primary-nav{display:flex; align-items:center; gap:34px;}
+  nav.primary-nav a{font-size:13.5px; font-weight:500; color:#fff; opacity:.92; transition:opacity .25s;}
+  header.scrolled nav.primary-nav a{color:var(--ink);}
+  nav.primary-nav a:hover{opacity:1; color:var(--terracotta);}
+  .header-actions{display:flex; align-items:center; gap:16px;}
+  .lang-switch{
+    display:flex; align-items:center; gap:6px; font-size:12.5px; font-weight:700;
+    color:#fff; letter-spacing:.02em;
+  }
+  header.scrolled .lang-switch{color:var(--plum);}
+  .lang-switch button{background:none; border:none; color:inherit; opacity:.5; padding:4px 2px; font-family:inherit; font-size:inherit; font-weight:inherit;}
+  .lang-switch button.active{opacity:1; border-bottom:1.5px solid currentColor;}
+  .menu-toggle{display:none; background:none; border:none; padding:6px; }
+  .menu-toggle span{display:block; width:22px; height:2px; background:#fff; margin:5px 0; transition:.3s;}
+  header.scrolled .menu-toggle span{background:var(--plum);}
+
+  @media (max-width:920px){
+    nav.primary-nav{
+      position:fixed; inset:0; top:0; background:var(--plum); flex-direction:column;
+      justify-content:center; gap:30px; transform:translateY(-100%); transition:transform .45s var(--ease);
+      z-index:90;
+    }
+    nav.primary-nav.open{transform:translateY(0);}
+    nav.primary-nav a{color:#fff !important; font-size:20px;}
+    .menu-toggle{display:block; z-index:110;}
+    .header-actions .btn-sm.nav-cta{display:none;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    min-height:100svh; display:flex; align-items:flex-end; position:relative;
+    background:#000;
+  }
+  .hero .bg{position:absolute; inset:0; overflow:hidden;}
+  .hero .bg img{width:100%; height:100%; object-fit:cover; object-position:center 30%; transform:scale(1.04);}
+  .hero .bg::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(25,10,28,.35) 0%, rgba(25,10,28,.35) 40%, rgba(25,10,28,.92) 100%);
+  }
+  .hero-content{position:relative; z-index:2; color:#fff; padding-bottom:90px; width:100%;}
+  .hero-content .kicker{color:var(--gold-light);}
+  .hero h1{font-size:clamp(38px,6vw,72px); line-height:1.06; max-width:900px;}
+  .hero p.lead{margin-top:22px; font-size:18px; color:rgba(255,255,255,.82); max-width:560px; line-height:1.6;}
+  .hero .cta-row{display:flex; gap:16px; margin-top:38px; flex-wrap:wrap;}
+  .scroll-cue{position:absolute; bottom:28px; inset-inline-start:32px; z-index:2; color:rgba(255,255,255,.7); font-size:11px; letter-spacing:.14em; text-transform:uppercase; display:flex; align-items:center; gap:10px;}
+  .scroll-cue::before{content:""; width:1px; height:34px; background:rgba(255,255,255,.5); display:block; animation:scrolldrop 2s infinite;}
+  html[dir="rtl"] .scroll-cue::before{order:2;}
+  @keyframes scrolldrop{0%{transform:scaleY(0); transform-origin:top;} 50%{transform:scaleY(1); transform-origin:top;} 50.1%{transform-origin:bottom;} 100%{transform:scaleY(0); transform-origin:bottom;}}
+  @media (max-width:640px){ .scroll-cue{display:none;} .hero-content{padding-bottom:64px;} }
+
+  /* ---------- about ---------- */
+  .about{padding:130px 0; background:var(--paper); overflow:hidden;}
+  .about .grid{display:grid; grid-template-columns:1.1fr 1fr; gap:70px; align-items:center;}
+  .about .imgwrap{position:relative;}
+  .about .imgwrap img{width:100%; height:600px; object-fit:cover;}
+  .about .imgwrap::before{
+    content:""; position:absolute; top:-22px; inset-inline-start:-22px; width:100%; height:100%;
+    border:1px solid var(--gold); z-index:-1;
+  }
+  .points{margin-top:32px; display:grid; gap:20px;}
+  .point{display:flex; gap:14px; align-items:flex-start;}
+  .point .dot{width:6px; height:6px; margin-top:9px; background:var(--terracotta); flex:none;}
+  .point b{display:block; font-size:15px; color:var(--plum); font-weight:600;}
+  .point span{font-size:14px; color:var(--gray);}
+  @media (max-width:920px){
+    .about{padding:80px 0;}
+    .about .grid{grid-template-columns:1fr; gap:44px;}
+    .about .imgwrap img{height:380px;}
+    .about .imgwrap::before{display:none;}
+  }
+
+  /* ---------- corporate gifting ---------- */
+  .gifting{padding:130px 0; background:var(--plum); color:#fff;}
+  .gifting .head{display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap; align-items:flex-end; margin-bottom:60px;}
+  .gifting .section-title{color:#fff;}
+  .gifting .section-body{color:rgba(255,255,255,.68);}
+  .cat-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.14);}
+  .cat-card{background:var(--plum); padding:34px 26px; min-height:220px; display:flex; flex-direction:column; justify-content:space-between; transition:background .35s;}
+  .cat-card:hover{background:var(--plum-soft);}
+  .cat-card .num{font-family:var(--ff-head); font-size:14px; color:var(--gold);}
+  .cat-card h3{font-size:17px; color:#fff; margin-top:26px; font-weight:600;}
+  .cat-card p{font-size:13px; color:rgba(255,255,255,.6); margin-top:10px; line-height:1.55;}
+  @media (max-width:1024px){ .cat-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:640px){ .cat-grid{grid-template-columns:repeat(2,1fr);} .cat-card{min-height:180px; padding:24px 18px;} .gifting{padding:80px 0;} }
+
+  /* ---------- products ---------- */
+  .products{padding:130px 0; background:var(--paper);}
+  .products .head{max-width:640px;}
+  .filters{display:flex; gap:10px; flex-wrap:wrap; margin:44px 0 40px;}
+  html[dir="rtl"] .filters{justify-content:flex-end;}
+  .filters button{
+    background:none; border:1px solid var(--hair); padding:9px 18px; font-size:12.5px; font-weight:600;
+    color:var(--gray); transition:all .3s;
+  }
+  .filters button.active, .filters button:hover{border-color:var(--plum); color:var(--plum);}
+  .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  .gitem{position:relative; overflow:hidden; aspect-ratio:1/1; background:#eee; cursor:pointer;}
+  .gitem img{width:100%; height:100%; object-fit:cover; transition:transform .7s var(--ease);}
+  .gitem:hover img{transform:scale(1.08);}
+  .gitem .tag{
+    position:absolute; inset-inline-start:0; bottom:0; padding:14px 16px; width:100%;
+    background:linear-gradient(0deg, rgba(25,10,28,.75), transparent);
+    color:#fff; font-size:13px; font-weight:600; opacity:0; transform:translateY(8px);
+    transition:all .35s var(--ease);
+  }
+  .gitem:hover .tag{opacity:1; transform:translateY(0);}
+  .gitem.hide{display:none;}
+  .products-note{margin-top:44px; font-size:14.5px; font-style:italic; color:var(--gray); text-align:center;}
+  @media (max-width:920px){ .gallery{grid-template-columns:repeat(3,1fr); gap:14px;} }
+  @media (max-width:640px){ .products{padding:80px 0;} .gallery{grid-template-columns:repeat(2,1fr); gap:10px;} .gitem .tag{opacity:1; transform:none; font-size:11.5px; padding:10px;} }
+
+  /* ---------- customization ---------- */
+  .customize{padding:130px 0; background:var(--white);}
+  .customize .grid{display:grid; grid-template-columns:1fr 1.05fr; gap:70px; align-items:center;}
+  .cimg-stack{display:grid; grid-template-columns:1.1fr .9fr; gap:16px; align-items:end;}
+  .cimg-stack img{width:100%; object-fit:cover;}
+  .cimg-stack img.tall{height:520px;}
+  .cimg-stack img.short{height:380px;}
+  .cust-list{margin-top:30px; display:grid; grid-template-columns:1fr 1fr; gap:16px 28px;}
+  .cust-list li{display:flex; align-items:center; gap:10px; font-size:14.5px; color:var(--ink); font-weight:500;}
+  .cust-list li::before{content:""; width:5px; height:5px; background:var(--terracotta); flex:none; border-radius:50%;}
+  .cust-note{margin-top:30px; font-size:13.5px; color:var(--gray); font-style:italic; border-inline-start:2px solid var(--gold); padding-inline-start:16px;}
+  @media (max-width:920px){
+    .customize{padding:80px 0;}
+    .customize .grid{grid-template-columns:1fr; gap:40px;}
+    .cimg-stack img.tall{height:320px;} .cimg-stack img.short{height:240px;}
+    .cust-list{grid-template-columns:1fr;}
+  }
+
+  /* ---------- process ---------- */
+  .process{padding:130px 0; background:var(--paper-deep);}
+  .process-track{display:grid; grid-template-columns:repeat(7,1fr); gap:14px; margin-top:60px;}
+  .pstep{position:relative; padding-top:26px;}
+  .pstep::before{content:""; position:absolute; top:0; inset-inline-start:0; width:100%; height:2px; background:var(--hair);}
+  .pstep::after{content:""; position:absolute; top:-3px; inset-inline-start:0; width:8px; height:8px; border-radius:50%; background:var(--terracotta);}
+  .pstep .n{font-family:var(--ff-head); font-size:13px; color:var(--gold);}
+  .pstep h4{font-size:14.5px; color:var(--plum); margin-top:14px; font-weight:600; min-height:38px;}
+  .pstep p{font-size:12.5px; color:var(--gray); margin-top:8px; line-height:1.5;}
+  @media (max-width:920px){
+    .process{padding:80px 0;}
+    .process-track{grid-template-columns:1fr; gap:0;}
+    .pstep{padding-top:0; padding-inline-start:26px; padding-bottom:34px;}
+    .pstep::before{width:2px; height:100%; top:0; inset-inline-start:0;}
+    .pstep::after{top:0; inset-inline-start:-3px;}
+  }
+
+  /* ---------- case study ---------- */
+  .case{background:var(--plum-deep); color:#fff; padding:130px 0;}
+  .case .grid{display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center;}
+  .case .imgwrap img{width:100%; height:620px; object-fit:cover;}
+  .case .kicker{color:var(--gold-light);}
+  .case h2{font-size:clamp(32px,4.5vw,52px); color:#fff;}
+  .case .sub{font-size:17px; font-style:italic; color:var(--gold-light); margin-top:10px;}
+  .case .stat{margin-top:34px; display:flex; align-items:baseline; gap:14px;}
+  .case .stat b{font-family:var(--ff-head); font-size:56px; color:var(--terracotta); line-height:1;}
+  .case .stat span{font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.7);}
+  .case-blocks{margin-top:34px; display:grid; gap:22px;}
+  .case-blocks h4{font-size:14px; color:var(--gold-light); font-weight:700; text-transform:uppercase; letter-spacing:.06em;}
+  .case-blocks p{font-size:14.5px; color:rgba(255,255,255,.78); margin-top:8px; line-height:1.6;}
+  .case-tags{margin-top:34px; display:flex; flex-wrap:wrap; gap:10px;}
+  .case-tags span{border:1px solid var(--gold); color:var(--gold-light); font-size:12px; padding:8px 16px;}
+  @media (max-width:920px){
+    .case{padding:80px 0;}
+    .case .grid{grid-template-columns:1fr; gap:40px;}
+    .case .imgwrap img{height:380px;}
+  }
+
+  /* ---------- why ---------- */
+  .why{padding:130px 0; background:var(--white);}
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--hair); border:1px solid var(--hair); margin-top:56px;}
+  .why-card{background:#fff; padding:40px 32px; min-height:200px;}
+  .why-card .mark{width:34px; height:2px; background:var(--terracotta); margin-bottom:22px;}
+  .why-card h3{font-size:17px; color:var(--plum); font-weight:600;}
+  .why-card p{font-size:13.5px; color:var(--gray); margin-top:10px; line-height:1.6;}
+  @media (max-width:920px){ .why-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:640px){ .why{padding:80px 0;} .why-grid{grid-template-columns:1fr;} .why-card{min-height:auto; padding:30px 24px;} }
+
+  /* ---------- occasions ---------- */
+  .occasions{position:relative; padding:130px 0; background:var(--plum); color:#fff; overflow:hidden;}
+  .occasions .bgimg{position:absolute; inset:0; opacity:.16;}
+  .occasions .bgimg img{width:100%; height:100%; object-fit:cover;}
+  .occasions .inner{position:relative; z-index:1;}
+  .occasions .section-title{color:#fff;}
+  .occ-grid{margin-top:50px; display:grid; grid-template-columns:repeat(3,1fr); gap:1px 40px;}
+  .occ-item{padding:20px 0; border-bottom:1px solid rgba(255,255,255,.16); font-size:15px; font-weight:500; display:flex; align-items:center; gap:12px;}
+  .occ-item::before{content:""; width:5px; height:5px; background:var(--gold); flex:none;}
+  @media (max-width:920px){ .occ-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:640px){ .occasions{padding:80px 0;} .occ-grid{grid-template-columns:1fr;} }
+
+  /* ---------- final cta ---------- */
+  .final-cta{padding:140px 0 120px; background:var(--paper); text-align:center;}
+  .final-cta h2{font-size:clamp(30px,5vw,52px); color:var(--plum); max-width:760px; margin:0 auto;}
+  .final-cta p.lead{max-width:560px; margin:22px auto 0; color:var(--gray); font-size:16px;}
+  .final-cta .cta-row{display:flex; gap:16px; justify-content:center; margin-top:42px; flex-wrap:wrap;}
+  .contact-form{max-width:640px; margin:70px auto 0; text-align:start; background:#fff; padding:44px; box-shadow:var(--shadow);}
+  .contact-form .row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .contact-form label{font-size:12px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--gray); display:block; margin-bottom:8px;}
+  .contact-form input, .contact-form textarea{
+    width:100%; border:none; border-bottom:1.5px solid var(--hair); padding:10px 0; font-family:inherit;
+    font-size:15px; background:transparent; color:var(--ink); margin-bottom:22px; transition:border-color .3s;
+  }
+  .contact-form input:focus, .contact-form textarea:focus{outline:none; border-color:var(--terracotta);}
+  .contact-form textarea{resize:vertical; min-height:70px;}
+  .contact-form button{width:100%; margin-top:6px;}
+  @media (max-width:640px){
+    .final-cta{padding:90px 0 80px;}
+    .contact-form{padding:28px;}
+    .contact-form .row{grid-template-columns:1fr;}
+  }
+
+  /* ---------- footer ---------- */
+  footer{background:var(--plum-deep); color:rgba(255,255,255,.7); padding:70px 0 30px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,.12);}
+  .footer-grid .logo-mark{margin-bottom:18px;}
+  .footer-grid p{font-size:13.5px; color:rgba(255,255,255,.55); max-width:280px; line-height:1.6;}
+  .footer-col h5{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-light); margin-bottom:18px;}
+  .footer-col a, .footer-col span{display:block; font-size:14px; margin-bottom:12px; color:rgba(255,255,255,.75);}
+  .footer-col a:hover{color:var(--terracotta);}
+  .footer-bottom{padding-top:26px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:12.5px; color:rgba(255,255,255,.45);}
+  @media (max-width:768px){ .footer-grid{grid-template-columns:1fr; gap:34px;} }
+
+  /* ---------- whatsapp float ---------- */
+  .wa-float{
+    position:fixed; bottom:24px; inset-inline-end:24px; z-index:80; background:#25D366; color:#fff;
+    width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 30px -8px rgba(0,0,0,.4); transition:transform .3s;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+
+  [data-i18n], [data-i18n-html]{}
+  html[dir="rtl"] .cust-note{border-inline-start:none; border-inline-end:2px solid var(--gold); padding-inline-end:16px; padding-inline-start:0;}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <a href="#top" aria-label="Anamill home">
+      <img src="assets/logo-transparent.png" alt="Anamill" class="logo-mark light" id="logoImg">
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#gifting" data-i18n="nav.gifting">Corporate Gifting</a>
+      <a href="#products" data-i18n="nav.products">Products</a>
+      <a href="#case" data-i18n="nav.case">Case Study</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-lang="ar">العربية</button>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Request a Proposal</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="bg"><img src="assets/07dbd37f-image.jpg" alt="Anamill handcrafted corporate gift cups"></div>
+    <div class="wrap hero-content">
+      <span class="kicker" data-i18n="hero.kicker">CORPORATE GIFTING</span>
+      <h1 data-i18n="hero.title">Corporate Gifts,<br>Crafted with Meaning.</h1>
+      <p class="lead" data-i18n="hero.body">Thoughtfully designed and beautifully crafted gifting experiences for companies, clients, teams and special occasions.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Request a Corporate Proposal</a>
+        <a href="#case" class="btn btn-ghost-light" data-i18n="hero.cta2">Explore Our Work</a>
+      </div>
+    </div>
+    <div class="scroll-cue" data-i18n="hero.scroll">Scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap grid">
+      <div class="imgwrap reveal">
+        <img src="assets/e4fd53f3-image.jpg" alt="Anamill handcrafted candle piece">
+      </div>
+      <div class="reveal">
+        <span class="kicker" data-i18n="about.kicker">ABOUT ANAMILL</span>
+        <h2 class="section-title" data-i18n="about.title">More Than a Gift. A Meaningful Experience.</h2>
+        <p class="section-body" data-i18n="about.body">Anamill creates handcrafted, eco-conscious lifestyle and gifting products inspired by Saudi culture and contemporary design — built for companies who want their gifts to feel considered, not generic.</p>
+        <div class="points">
+          <div class="point"><span class="dot"></span><div><b data-i18n="about.p1t">Handcrafted</b><span data-i18n="about.p1d">Every piece is shaped and finished by hand.</span></div></div>
+          <div class="point"><span class="dot"></span><div><b data-i18n="about.p2t">Saudi-Inspired Design</b><span data-i18n="about.p2d">An authentic visual language with a modern voice.</span></div></div>
+          <div class="point"><span class="dot"></span><div><b data-i18n="about.p3t">Thoughtful Gifting</b><span data-i18n="about.p3d">Concepts built around your occasion and audience.</span></div></div>
+          <div class="point"><span class="dot"></span><div><b data-i18n="about.p4t">Sustainable Approach</b><span data-i18n="about.p4d">Eco-conscious materials and production.</span></div></div>
+          <div class="point"><span class="dot"></span><div><b data-i18n="about.p5t">Premium Presentation</b><span data-i18n="about.p5d">Packaging and detailing built for gifting.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPORATE GIFTING -->
+  <section class="gifting" id="gifting">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <span class="kicker" data-i18n="gifting.kicker">CORPORATE GIFTING</span>
+          <h2 class="section-title" data-i18n="gifting.title">Gifting Designed Around Your Brand</h2>
+        </div>
+        <p class="section-body" data-i18n="gifting.body">Every project is developed around your occasion, audience, quantity, budget, brand identity and delivery requirements.</p>
+      </div>
+      <div class="cat-grid reveal">
+        <div class="cat-card"><span class="num">01</span><div><h3 data-i18n="gifting.c1t">VIP &amp; Executive Gifts</h3><p data-i18n="gifting.c1d">For executives, VIP clients and important business relationships.</p></div></div>
+        <div class="cat-card"><span class="num">02</span><div><h3 data-i18n="gifting.c2t">Client &amp; Partner Gifts</h3><p data-i18n="gifting.c2d">Thoughtful gifts designed to strengthen business relationships.</p></div></div>
+        <div class="cat-card"><span class="num">03</span><div><h3 data-i18n="gifting.c3t">Employee Gifts</h3><p data-i18n="gifting.c3d">Recognition, appreciation, onboarding and internal celebrations.</p></div></div>
+        <div class="cat-card"><span class="num">04</span><div><h3 data-i18n="gifting.c4t">Events &amp; Conferences</h3><p data-i18n="gifting.c4d">Scalable gifting for exhibitions, conferences and corporate events.</p></div></div>
+        <div class="cat-card"><span class="num">05</span><div><h3 data-i18n="gifting.c5t">Seasonal &amp; National Occasions</h3><p data-i18n="gifting.c5d">Ramadan, Eid, Saudi National Day, anniversaries and more.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker" data-i18n="products.kicker">OUR PRODUCTS</span>
+        <h2 class="section-title" data-i18n="products.title">A Collection Built for Gifting</h2>
+      </div>
+      <div class="filters reveal">
+        <button class="active" data-filter="all" data-i18n="products.fAll">All</button>
+        <button data-filter="serving" data-i18n="products.fServing">Serving &amp; Hospitality</button>
+        <button data-filter="coffee" data-i18n="products.fCoffee">Coffee &amp; Cups</button>
+        <button data-filter="dates" data-i18n="products.fDates">Dates &amp; Treats</button>
+        <button data-filter="jars" data-i18n="products.fJars">Jars &amp; Keepsakes</button>
+        <button data-filter="sets" data-i18n="products.fSets">Gift Sets</button>
+        <button data-filter="small" data-i18n="products.fSmall">Small Gifts</button>
+      </div>
+      <div class="gallery reveal">
+        <div class="gitem" data-cat="serving"><img src="assets/efd1b72c-image.jpg" alt="Serving jars collection" loading="lazy"><span class="tag" data-i18n="products.serving">Serving &amp; Hospitality</span></div>
+        <div class="gitem" data-cat="coffee"><img src="assets/ce27459b-image.jpg" alt="Espresso cup set" loading="lazy"><span class="tag" data-i18n="products.coffee">Coffee &amp; Cups</span></div>
+        <div class="gitem" data-cat="jars"><img src="assets/befabdc2-image.jpg" alt="Handcrafted lidded jar" loading="lazy"><span class="tag" data-i18n="products.jars">Jars &amp; Keepsakes</span></div>
+        <div class="gitem" data-cat="sets"><img src="assets/8210a5e9-image.jpg" alt="Corporate gift box set" loading="lazy"><span class="tag" data-i18n="products.sets">Gift Sets</span></div>
+        <div class="gitem" data-cat="small"><img src="assets/9f98713c-image.jpg" alt="Small keepsake keychains" loading="lazy"><span class="tag" data-i18n="products.small">Small Gifts</span></div>
+        <div class="gitem" data-cat="dates"><img src="assets/13f4a08c-image.jpg" alt="Footed serving bowls" loading="lazy"><span class="tag" data-i18n="products.dates">Dates &amp; Treats</span></div>
+        <div class="gitem" data-cat="coffee"><img src="assets/07dbd37f-image.jpg" alt="Matte cup and saucer set" loading="lazy"><span class="tag" data-i18n="products.coffee">Coffee &amp; Cups</span></div>
+        <div class="gitem" data-cat="serving"><img src="assets/58c48588-image.jpg" alt="Glass pedestal bowl pair" loading="lazy"><span class="tag" data-i18n="products.serving">Serving &amp; Hospitality</span></div>
+        <div class="gitem" data-cat="jars"><img src="assets/b1fdf8fd-image.jpg" alt="Purple lidded glass jars" loading="lazy"><span class="tag" data-i18n="products.jars">Jars &amp; Keepsakes</span></div>
+        <div class="gitem" data-cat="dates"><img src="assets/2cb66961-image.jpg" alt="Small domed lidded bowls" loading="lazy"><span class="tag" data-i18n="products.dates">Dates &amp; Treats</span></div>
+        <div class="gitem" data-cat="sets"><img src="assets/58b36857-image.jpg" alt="Gift box with tiered stand" loading="lazy"><span class="tag" data-i18n="products.sets">Gift Sets</span></div>
+        <div class="gitem" data-cat="small"><img src="assets/c4c171fe-image.jpg" alt="Decorative lids detail" loading="lazy"><span class="tag" data-i18n="products.small">Small Gifts</span></div>
+      </div>
+      <p class="products-note reveal" data-i18n="products.note">Choose from our collection, or let us create a combination tailored to your occasion.</p>
+    </div>
+  </section>
+
+  <!-- CUSTOMIZATION -->
+  <section class="customize" id="customize">
+    <div class="wrap grid">
+      <div class="reveal">
+        <span class="kicker" data-i18n="custom.kicker">CUSTOMIZATION</span>
+        <h2 class="section-title" data-i18n="custom.title">Make It Yours.</h2>
+        <p class="section-body" style="max-width:100%;" data-i18n="custom.body">Every corporate gift can be tailored to reflect your brand and your occasion.</p>
+        <ul class="cust-list">
+          <li data-i18n="custom.i1">Company logo</li>
+          <li data-i18n="custom.i2">Personalized cards</li>
+          <li data-i18n="custom.i3">Custom packaging</li>
+          <li data-i18n="custom.i4">Gift combinations</li>
+          <li data-i18n="custom.i5">Occasion-specific concepts</li>
+          <li data-i18n="custom.i6">Corporate branding</li>
+          <li data-i18n="custom.i7">Quantity-based solutions</li>
+        </ul>
+        <p class="cust-note" data-i18n="custom.note">Every customization is developed as a capability tailored to your specific project — presented here to show what's possible.</p>
+      </div>
+      <div class="cimg-stack reveal">
+        <img class="tall" src="assets/28e13325-image.jpg" alt="Anamill branded gift box">
+        <img class="short" src="assets/c4c171fe-image.jpg" alt="Custom decorated lids">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="kicker" data-i18n="process.kicker">OUR PROCESS</span>
+        <h2 class="section-title" data-i18n="process.title">A Process Built for Corporate Confidence</h2>
+      </div>
+      <div class="process-track reveal">
+        <div class="pstep"><span class="n">01</span><h4 data-i18n="process.s1t">Understand Your Brief</h4><p data-i18n="process.s1d">We listen to your goals, occasion and audience.</p></div>
+        <div class="pstep"><span class="n">02</span><h4 data-i18n="process.s2t">Develop the Concept</h4><p data-i18n="process.s2d">A concept aligned to your brand and moment.</p></div>
+        <div class="pstep"><span class="n">03</span><h4 data-i18n="process.s3t">Select &amp; Customize</h4><p data-i18n="process.s3d">Products finalized with your customization.</p></div>
+        <div class="pstep"><span class="n">04</span><h4 data-i18n="process.s4t">Approve the Sample</h4><p data-i18n="process.s4d">You review a final sample before production.</p></div>
+        <div class="pstep"><span class="n">05</span><h4 data-i18n="process.s5t">Produce at Scale</h4><p data-i18n="process.s5d">Manufactured to the agreed quantity.</p></div>
+        <div class="pstep"><span class="n">06</span><h4 data-i18n="process.s6t">Quality Check</h4><p data-i18n="process.s6d">Every piece reviewed before packaging.</p></div>
+        <div class="pstep"><span class="n">07</span><h4 data-i18n="process.s7t">Package &amp; Deliver</h4><p data-i18n="process.s7d">Your order arrives ready for gifting.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="case" id="case">
+    <div class="wrap grid">
+      <div class="imgwrap reveal">
+        <img src="assets/SAB.jpeg" alt="SAB and Anamill 100th anniversary VIP gift">
+      </div>
+      <div class="reveal">
+        <span class="kicker" data-i18n="case.kicker">CASE STUDY</span>
+        <h2 data-i18n="case.title">SAB × Anamill</h2>
+        <p class="sub" data-i18n="case.sub">100th Anniversary VIP Gifting</p>
+        <div class="stat"><b>400</b><span data-i18n="case.statLabel">VIP Gifts</span></div>
+        <div class="case-blocks">
+          <div><h4 data-i18n="case.h1">The Brief</h4><p data-i18n="case.b1">SAB required a premium gifting solution for its 100th anniversary VIP clients.</p></div>
+          <div><h4 data-i18n="case.h2">The Solution</h4><p data-i18n="case.b2">Anamill created a thoughtfully designed, premium and eco-conscious gifting experience tailored to the occasion.</p></div>
+          <div><h4 data-i18n="case.h3">The Execution</h4><p data-i18n="case.b3">400 gifts with customized presentation, bulk production and fulfillment — delivered according to the project's requirements.</p></div>
+        </div>
+        <div class="case-tags">
+          <span data-i18n="case.t1">Premium Presentation</span>
+          <span data-i18n="case.t2">Eco-Conscious Approach</span>
+          <span data-i18n="case.t3">Corporate Customization</span>
+          <span data-i18n="case.t4">Bulk Production &amp; Fulfillment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="kicker" data-i18n="why.kicker">WHY ANAMILL</span>
+        <h2 class="section-title" data-i18n="why.title">A Dependable Partner for Corporate Gifting</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t1">Handcrafted Quality</h3><p data-i18n="why.d1">Thoughtfully made products with attention to detail.</p></div>
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t2">Saudi-Inspired Design</h3><p data-i18n="why.d2">A contemporary interpretation of Saudi hospitality and culture.</p></div>
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t3">Thoughtful Customization</h3><p data-i18n="why.d3">Gifts designed around your brand, occasion and audience.</p></div>
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t4">Premium Presentation</h3><p data-i18n="why.d4">Packaging designed to make the experience memorable.</p></div>
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t5">Corporate-Ready</h3><p data-i18n="why.d5">Solutions for individual VIP gifts as well as larger orders.</p></div>
+        <div class="why-card"><span class="mark"></span><h3 data-i18n="why.t6">End-to-End Service</h3><p data-i18n="why.d6">From concept and customization to production and delivery.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OCCASIONS -->
+  <section class="occasions" id="occasions">
+    <div class="bgimg"><img src="assets/70b0e2a3-image.jpg" alt=""></div>
+    <div class="wrap inner">
+      <div class="reveal">
+        <span class="kicker" data-i18n="occ.kicker">CORPORATE OCCASIONS</span>
+        <h2 class="section-title" data-i18n="occ.title">We Support You at Every Milestone</h2>
+      </div>
+      <div class="occ-grid reveal">
+        <div class="occ-item" data-i18n="occ.o1">Ramadan</div>
+        <div class="occ-item" data-i18n="occ.o2">Eid</div>
+        <div class="occ-item" data-i18n="occ.o3">Saudi National Day</div>
+        <div class="occ-item" data-i18n="occ.o4">Company Anniversaries</div>
+        <div class="occ-item" data-i18n="occ.o5">VIP Client Appreciation</div>
+        <div class="occ-item" data-i18n="occ.o6">Employee Appreciation</div>
+        <div class="occ-item" data-i18n="occ.o7">Conferences &amp; Exhibitions</div>
+        <div class="occ-item" data-i18n="occ.o8">Executive Gifting</div>
+        <div class="occ-item" data-i18n="occ.o9">Corporate Events</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="contact">
+    <div class="wrap">
+      <span class="kicker" data-i18n="final.kicker">LET'S TALK</span>
+      <h2 data-i18n="final.title">Let's Create Something Meaningful Together.</h2>
+      <p class="lead" data-i18n="final.body">Tell us about your occasion, quantity and requirements, and our team will create a corporate gifting proposal tailored to your needs.</p>
+      <div class="cta-row">
+        <a href="#proposalForm" class="btn btn-primary" data-i18n="final.cta1">Request a Corporate Proposal</a>
+        <a id="waDirect" href="#" target="_blank" rel="noopener" class="btn btn-ghost-dark" data-i18n="final.cta2">WhatsApp Anamill</a>
+      </div>
+
+      <form class="contact-form reveal" id="proposalForm">
+        <div class="row">
+          <div><label data-i18n="form.name">Name</label><input type="text" name="name" required></div>
+          <div><label data-i18n="form.company">Company</label><input type="text" name="company"></div>
+        </div>
+        <div class="row">
+          <div><label data-i18n="form.occasion">Occasion</label><input type="text" name="occasion"></div>
+          <div><label data-i18n="form.quantity">Quantity</label><input type="text" name="quantity"></div>
+        </div>
+        <label data-i18n="form.message">Message</label>
+        <textarea name="message" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary" data-i18n="form.submit">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-transparent.png" alt="Anamill" class="logo-mark light" style="height:28px;">
+        <p data-i18n="footer.tagline">Corporate gifting, crafted with meaning — handcrafted, Saudi-inspired gifts for companies across the Kingdom.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.explore">Explore</h5>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#gifting" data-i18n="nav.gifting">Corporate Gifting</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#case" data-i18n="nav.case">Case Study</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.contact">Contact</h5>
+        <a href="https://anamill.com" target="_blank" rel="noopener">anamill.com</a>
+        <a href="https://www.instagram.com/anamill.wi/" target="_blank" rel="noopener">Instagram</a>
+        <a id="footerWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:info@anamill.com">info@anamill.com</a>
+        <span data-i18n="footer.location">Saudi Arabia</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.copy">© 2026 Anamill. All rights reserved.</span>
+      <span data-i18n="footer.built">Corporate Gifting Portfolio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Anamill">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h0a7.94 7.94 0 0 0 5.55-13.6zm-5.55 12.2h0a6.57 6.57 0 0 1-3.35-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.6 6.6 0 1 1 5.58 3.1zm3.6-4.94c-.2-.1-1.17-.58-1.35-.64s-.32-.1-.45.1-.5.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-1.6-.98 6 6 0 0 1-1.1-1.37c-.12-.2 0-.3.09-.4s.2-.24.3-.36a1.4 1.4 0 0 0 .2-.33.36.36 0 0 0 0-.35c-.05-.1-.45-1.08-.62-1.48s-.33-.33-.45-.34h-.39a.75.75 0 0 0-.54.25 2.28 2.28 0 0 0-.71 1.7 3.96 3.96 0 0 0 .83 2.1 9.06 9.06 0 0 0 3.47 3.07c.48.21.86.33 1.15.42a2.77 2.77 0 0 0 1.27.08 2.08 2.08 0 0 0 1.36-.96 1.7 1.7 0 0 0 .12-.96c-.05-.09-.18-.14-.38-.24z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA_NUMBER = "966580832125";
+  var EMAIL = "info@anamill.com";
+
+  var I18N = {
+    en: {
+      "nav.about":"About","nav.gifting":"Corporate Gifting","nav.products":"Products","nav.case":"Case Study","nav.contact":"Contact","nav.cta":"Request a Proposal",
+      "hero.kicker":"CORPORATE GIFTING","hero.title":"Corporate Gifts,<br>Crafted with Meaning.",
+      "hero.body":"Thoughtfully designed and beautifully crafted gifting experiences for companies, clients, teams and special occasions.",
+      "hero.cta1":"Request a Corporate Proposal","hero.cta2":"Explore Our Work","hero.scroll":"Scroll",
+      "about.kicker":"ABOUT ANAMILL","about.title":"More Than a Gift. A Meaningful Experience.",
+      "about.body":"Anamill creates handcrafted, eco-conscious lifestyle and gifting products inspired by Saudi culture and contemporary design — built for companies who want their gifts to feel considered, not generic.",
+      "about.p1t":"Handcrafted","about.p1d":"Every piece is shaped and finished by hand.",
+      "about.p2t":"Saudi-Inspired Design","about.p2d":"An authentic visual language with a modern voice.",
+      "about.p3t":"Thoughtful Gifting","about.p3d":"Concepts built around your occasion and audience.",
+      "about.p4t":"Sustainable Approach","about.p4d":"Eco-conscious materials and production.",
+      "about.p5t":"Premium Presentation","about.p5d":"Packaging and detailing built for gifting.",
+      "gifting.kicker":"CORPORATE GIFTING","gifting.title":"Gifting Designed Around Your Brand",
+      "gifting.body":"Every project is developed around your occasion, audience, quantity, budget, brand identity and delivery requirements.",
+      "gifting.c1t":"VIP &amp; Executive Gifts","gifting.c1d":"For executives, VIP clients and important business relationships.",
+      "gifting.c2t":"Client &amp; Partner Gifts","gifting.c2d":"Thoughtful gifts designed to strengthen business relationships.",
+      "gifting.c3t":"Employee Gifts","gifting.c3d":"Recognition, appreciation, onboarding and internal celebrations.",
+      "gifting.c4t":"Events &amp; Conferences","gifting.c4d":"Scalable gifting for exhibitions, conferences and corporate events.",
+      "gifting.c5t":"Seasonal &amp; National Occasions","gifting.c5d":"Ramadan, Eid, Saudi National Day, anniversaries and more.",
+      "products.kicker":"OUR PRODUCTS","products.title":"A Collection Built for Gifting",
+      "products.fAll":"All","products.fServing":"Serving &amp; Hospitality","products.fCoffee":"Coffee &amp; Cups","products.fDates":"Dates &amp; Treats","products.fJars":"Jars &amp; Keepsakes","products.fSets":"Gift Sets","products.fSmall":"Small Gifts",
+      "products.serving":"Serving &amp; Hospitality","products.coffee":"Coffee &amp; Cups","products.dates":"Dates &amp; Treats","products.jars":"Jars &amp; Keepsakes","products.sets":"Gift Sets","products.small":"Small Gifts",
+      "products.note":"Choose from our collection, or let us create a combination tailored to your occasion.",
+      "custom.kicker":"CUSTOMIZATION","custom.title":"Make It Yours.","custom.body":"Every corporate gift can be tailored to reflect your brand and your occasion.",
+      "custom.i1":"Company logo","custom.i2":"Personalized cards","custom.i3":"Custom packaging","custom.i4":"Gift combinations","custom.i5":"Occasion-specific concepts","custom.i6":"Corporate branding","custom.i7":"Quantity-based solutions",
+      "custom.note":"Every customization is developed as a capability tailored to your specific project — presented here to show what's possible.",
+      "process.kicker":"OUR PROCESS","process.title":"A Process Built for Corporate Confidence",
+      "process.s1t":"Understand Your Brief","process.s1d":"We listen to your goals, occasion and audience.",
+      "process.s2t":"Develop the Concept","process.s2d":"A concept aligned to your brand and moment.",
+      "process.s3t":"Select &amp; Customize","process.s3d":"Products finalized with your customization.",
+      "process.s4t":"Approve the Sample","process.s4d":"You review a final sample before production.",
+      "process.s5t":"Produce at Scale","process.s5d":"Manufactured to the agreed quantity.",
+      "process.s6t":"Quality Check","process.s6d":"Every piece reviewed before packaging.",
+      "process.s7t":"Package &amp; Deliver","process.s7d":"Your order arrives ready for gifting.",
+      "case.kicker":"CASE STUDY","case.title":"SAB × Anamill","case.sub":"100th Anniversary VIP Gifting","case.statLabel":"VIP Gifts",
+      "case.h1":"The Brief","case.b1":"SAB required a premium gifting solution for its 100th anniversary VIP clients.",
+      "case.h2":"The Solution","case.b2":"Anamill created a thoughtfully designed, premium and eco-conscious gifting experience tailored to the occasion.",
+      "case.h3":"The Execution","case.b3":"400 gifts with customized presentation, bulk production and fulfillment — delivered according to the project's requirements.",
+      "case.t1":"Premium Presentation","case.t2":"Eco-Conscious Approach","case.t3":"Corporate Customization","case.t4":"Bulk Production &amp; Fulfillment",
+      "why.kicker":"WHY ANAMILL","why.title":"A Dependable Partner for Corporate Gifting",
+      "why.t1":"Handcrafted Quality","why.d1":"Thoughtfully made products with attention to detail.",
+      "why.t2":"Saudi-Inspired Design","why.d2":"A contemporary interpretation of Saudi hospitality and culture.",
+      "why.t3":"Thoughtful Customization","why.d3":"Gifts designed around your brand, occasion and audience.",
+      "why.t4":"Premium Presentation","why.d4":"Packaging designed to make the experience memorable.",
+      "why.t5":"Corporate-Ready","why.d5":"Solutions for individual VIP gifts as well as larger orders.",
+      "why.t6":"End-to-End Service","why.d6":"From concept and customization to production and delivery.",
+      "occ.kicker":"CORPORATE OCCASIONS","occ.title":"We Support You at Every Milestone",
+      "occ.o1":"Ramadan","occ.o2":"Eid","occ.o3":"Saudi National Day","occ.o4":"Company Anniversaries","occ.o5":"VIP Client Appreciation","occ.o6":"Employee Appreciation","occ.o7":"Conferences &amp; Exhibitions","occ.o8":"Executive Gifting","occ.o9":"Corporate Events",
+      "final.kicker":"LET'S TALK","final.title":"Let's Create Something Meaningful Together.",
+      "final.body":"Tell us about your occasion, quantity and requirements, and our team will create a corporate gifting proposal tailored to your needs.",
+      "final.cta1":"Request a Corporate Proposal","final.cta2":"WhatsApp Anamill",
+      "form.name":"Name","form.company":"Company","form.occasion":"Occasion","form.quantity":"Quantity","form.message":"Message","form.submit":"Send via WhatsApp",
+      "footer.tagline":"Corporate gifting, crafted with meaning — handcrafted, Saudi-inspired gifts for companies across the Kingdom.",
+      "footer.explore":"Explore","footer.contact":"Contact","footer.location":"Saudi Arabia",
+      "footer.copy":"© 2026 Anamill. All rights reserved.","footer.built":"Corporate Gifting Portfolio"
+    },
+    ar: {
+      "nav.about":"من نحن","nav.gifting":"الهدايا المؤسسية","nav.products":"منتجاتنا","nav.case":"دراسة حالة","nav.contact":"تواصل معنا","nav.cta":"اطلب عرضًا",
+      "hero.kicker":"الهدايا المؤسسية","hero.title":"هدايا مؤسسية<br>تُصنع بمعنى",
+      "hero.body":"تجارب هدايا مصممة بعناية وصُنعت بحرفية عالية، للشركات والعملاء والفرق والمناسبات الخاصة.",
+      "hero.cta1":"اطلب عرضًا مؤسسيًا","hero.cta2":"اكتشف أعمالنا","hero.scroll":"مرر للأسفل",
+      "about.kicker":"من نحن","about.title":"أكثر من مجرد هدية... تجربة ذات معنى",
+      "about.body":"تصنع أنامل منتجات حرفية واعية بالبيئة، مستوحاة من الثقافة السعودية وبلمسة تصميم معاصرة — لتشعر الشركات أن هداياها مدروسة بعناية، لا نمطية.",
+      "about.p1t":"صناعة يدوية","about.p1d":"كل قطعة تُشكَّل وتُنهى يدويًا بعناية.",
+      "about.p2t":"تصميم مستوحى من الهوية السعودية","about.p2d":"لغة بصرية أصيلة بروح معاصرة.",
+      "about.p3t":"هدايا ذات معنى","about.p3d":"مفاهيم تُبنى حول مناسبتكم وجمهوركم.",
+      "about.p4t":"نهج مستدام","about.p4d":"خامات وأساليب إنتاج واعية بالبيئة.",
+      "about.p5t":"تقديم متميز","about.p5d":"تغليف وتفاصيل مصممة للإهداء.",
+      "gifting.kicker":"الهدايا المؤسسية","gifting.title":"هدايا مصممة حول هويتكم",
+      "gifting.body":"نطوّر كل مشروع بناءً على المناسبة والجمهور والكمية والميزانية وهوية العلامة ومتطلبات التسليم.",
+      "gifting.c1t":"هدايا كبار الشخصيات والتنفيذيين","gifting.c1d":"لكبار التنفيذيين والعملاء المهمين والعلاقات التجارية الأساسية.",
+      "gifting.c2t":"هدايا العملاء والشركاء","gifting.c2d":"هدايا مدروسة تعزز العلاقات التجارية.",
+      "gifting.c3t":"هدايا الموظفين","gifting.c3d":"للتقدير والتهيئة والاحتفالات الداخلية.",
+      "gifting.c4t":"الفعاليات والمؤتمرات","gifting.c4d":"حلول هدايا قابلة للتوسع للمعارض والمؤتمرات والفعاليات.",
+      "gifting.c5t":"المناسبات الموسمية والوطنية","gifting.c5d":"رمضان، العيد، اليوم الوطني، الذكرى السنوية وغيرها.",
+      "products.kicker":"منتجاتنا","products.title":"مجموعة صُممت للإهداء",
+      "products.fAll":"الكل","products.fServing":"الضيافة والتقديم","products.fCoffee":"القهوة والفناجين","products.fDates":"التمور والحلويات","products.fJars":"الجرار وقطع الديكور","products.fSets":"أطقم الهدايا","products.fSmall":"الهدايا الصغيرة",
+      "products.serving":"الضيافة والتقديم","products.coffee":"القهوة والفناجين","products.dates":"التمور والحلويات","products.jars":"الجرار وقطع الديكور","products.sets":"أطقم الهدايا","products.small":"الهدايا الصغيرة",
+      "products.note":"اختاروا من مجموعتنا، أو دعونا نصمم لكم تركيبة مخصصة تناسب مناسبتكم.",
+      "custom.kicker":"التخصيص","custom.title":"اجعلوها تحمل بصمتكم","custom.body":"يمكن تخصيص كل هدية مؤسسية لتعكس هويتكم ومناسبتكم.",
+      "custom.i1":"شعار الشركة","custom.i2":"بطاقات إهداء شخصية","custom.i3":"تغليف مخصص","custom.i4":"تركيبات هدايا متنوعة","custom.i5":"مفاهيم خاصة بالمناسبة","custom.i6":"هوية مؤسسية","custom.i7":"حلول حسب الكمية",
+      "custom.note":"كل تخصيص يُطوَّر كإمكانية تناسب مشروعكم تحديدًا — ونعرضها هنا لنوضح ما هو ممكن.",
+      "process.kicker":"آلية العمل","process.title":"آلية عمل واضحة تمنحكم الثقة",
+      "process.s1t":"فهم المتطلبات","process.s1d":"نستمع لأهدافكم والمناسبة والجمهور المستهدف.",
+      "process.s2t":"تطوير الفكرة","process.s2d":"مفهوم يعكس هويتكم ومناسبتكم.",
+      "process.s3t":"الاختيار والتخصيص","process.s3d":"تحديد المنتجات وتطبيق التخصيص.",
+      "process.s4t":"اعتماد العيّنة","process.s4d":"مراجعة عيّنة نهائية قبل الإنتاج.",
+      "process.s5t":"الإنتاج بالجملة","process.s5d":"تنفيذ الطلب بالكمية المتفق عليها.",
+      "process.s6t":"فحص الجودة","process.s6d":"مراجعة كل قطعة قبل التغليف.",
+      "process.s7t":"التغليف والتسليم","process.s7d":"تسليم الطلب جاهزًا للإهداء.",
+      "case.kicker":"دراسة حالة","case.title":"SAB × أنامل","case.sub":"هدايا كبار العملاء بمناسبة الذكرى المئوية","case.statLabel":"هدية لكبار العملاء",
+      "case.h1":"التحدي","case.b1":"احتاج البنك السعودي الأول (SAB) إلى حل هدايا متميز لعملائه من كبار الشخصيات بمناسبة الذكرى المئوية لتأسيسه.",
+      "case.h2":"الحل","case.b2":"طوّرت أنامل تجربة هدايا مصممة بعناية، فاخرة وواعية بالبيئة، تناسب أهمية المناسبة.",
+      "case.h3":"التنفيذ","case.b3":"٤٠٠ هدية بتقديم مخصص، وإنتاج وتسليم بالجملة، وفق متطلبات المشروع.",
+      "case.t1":"تقديم متميز","case.t2":"نهج واعٍ بالبيئة","case.t3":"تخصيص مؤسسي","case.t4":"إنتاج وتسليم بالجملة",
+      "why.kicker":"لماذا أنامل","why.title":"شريك موثوق لهداياكم المؤسسية",
+      "why.t1":"جودة حرفية","why.d1":"عناية فائقة بالتفاصيل في كل قطعة.",
+      "why.t2":"تصميم سعودي الهوية","why.d2":"تفسير معاصر للضيافة والثقافة السعودية.",
+      "why.t3":"تخصيص مدروس","why.d3":"هدايا مصممة حول علامتكم ومناسبتكم وجمهوركم.",
+      "why.t4":"تقديم متميز","why.d4":"تغليف وتقديم يجعلان التجربة لا تُنسى.",
+      "why.t5":"جاهزية مؤسسية","why.d5":"حلول لهدايا الأفراد وللطلبات الكبيرة.",
+      "why.t6":"خدمة متكاملة","why.d6":"من الفكرة والتخصيص إلى الإنتاج والتغليف والتسليم.",
+      "occ.kicker":"المناسبات المؤسسية","occ.title":"نرافقكم في كل مناسبة",
+      "occ.o1":"رمضان","occ.o2":"عيد الفطر والأضحى","occ.o3":"اليوم الوطني السعودي","occ.o4":"الذكرى السنوية للشركة","occ.o5":"تقدير كبار العملاء","occ.o6":"تقدير الموظفين","occ.o7":"المؤتمرات والمعارض","occ.o8":"الهدايا التنفيذية","occ.o9":"الفعاليات المؤسسية",
+      "final.kicker":"لنتحدث","final.title":"لنصنع معًا شيئًا ذا معنى",
+      "final.body":"أخبرونا عن مناسبتكم والكمية ومتطلباتكم، وسيُعد فريقنا عرض هدايا مؤسسية مخصصًا لكم.",
+      "final.cta1":"اطلب عرضًا مؤسسيًا","final.cta2":"تواصل عبر واتساب",
+      "form.name":"الاسم","form.company":"الشركة","form.occasion":"المناسبة","form.quantity":"الكمية","form.message":"رسالتكم","form.submit":"إرسال عبر واتساب",
+      "footer.tagline":"هدايا مؤسسية تُصنع بمعنى — هدايا حرفية مستوحاة من الهوية السعودية للشركات في أنحاء المملكة.",
+      "footer.explore":"استكشف","footer.contact":"تواصل معنا","footer.location":"المملكة العربية السعودية",
+      "footer.copy":"© 2026 أنامل. جميع الحقوق محفوظة.","footer.built":"محفظة الهدايا المؤسسية"
+    }
+  };
+
+  function waLink(prefill){
+    return "https://wa.me/" + WA_NUMBER + (prefill ? ("?text=" + encodeURIComponent(prefill)) : "");
+  }
+
+  function applyLang(lang){
+    var dict = I18N[lang] || I18N.en;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var key = el.getAttribute("data-i18n");
+      if(dict[key] !== undefined){ el.innerHTML = dict[key]; }
+    });
+    document.querySelectorAll(".lang-switch button").forEach(function(b){
+      b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+    });
+    try{ localStorage.setItem("anamill_lang", lang); }catch(e){}
+  }
+
+  document.querySelectorAll(".lang-switch button").forEach(function(btn){
+    btn.addEventListener("click", function(){ applyLang(btn.getAttribute("data-lang")); });
+  });
+
+  var initialLang = "en";
+  try{ initialLang = localStorage.getItem("anamill_lang") || "en"; }catch(e){}
+  applyLang(initialLang);
+
+  // header scroll state
+  var header = document.getElementById("siteHeader");
+  function onScroll(){ header.classList.toggle("scrolled", window.scrollY > 40); }
+  window.addEventListener("scroll", onScroll); onScroll();
+
+  // mobile menu
+  var menuToggle = document.getElementById("menuToggle");
+  var nav = document.getElementById("primaryNav");
+  menuToggle.addEventListener("click", function(){ nav.classList.toggle("open"); });
+  nav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ nav.classList.remove("open"); }); });
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:.14});
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+
+  // product filters
+  document.querySelectorAll(".filters button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll(".filters button").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      var f = btn.getAttribute("data-filter");
+      document.querySelectorAll(".gitem").forEach(function(item){
+        item.classList.toggle("hide", f !== "all" && item.getAttribute("data-cat") !== f);
+      });
+    });
+  });
+
+  // whatsapp links
+  document.getElementById("waFloat").href = waLink();
+  document.getElementById("footerWa").href = waLink();
+  document.getElementById("waDirect").href = waLink();
+
+  // proposal form -> whatsapp
+  document.getElementById("proposalForm").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var f = ev.target;
+    var lang = document.documentElement.lang === "ar" ? "ar" : "en";
+    var labels = lang === "ar"
+      ? {n:"الاسم", c:"الشركة", o:"المناسبة", q:"الكمية", m:"رسالة", intro:"مرحبًا أنامل، أرغب بطلب عرض هدايا مؤسسية."}
+      : {n:"Name", c:"Company", o:"Occasion", q:"Quantity", m:"Message", intro:"Hello Anamill, I'd like to request a corporate gifting proposal."};
+    var parts = [labels.intro];
+    if(f.name.value) parts.push(labels.n + ": " + f.name.value);
+    if(f.company.value) parts.push(labels.c + ": " + f.company.value);
+    if(f.occasion.value) parts.push(labels.o + ": " + f.occasion.value);
+    if(f.quantity.value) parts.push(labels.q + ": " + f.quantity.value);
+    if(f.message.value) parts.push(labels.m + ": " + f.message.value);
+    window.open(waLink(parts.join("\n")), "_blank");
+  });
+})();
+</script>
+</body>
+</html>
